@@ -1,0 +1,67 @@
+%PDF-1.7
+%/XObject << /Im0 5 0 R >> /S /JavaScript /JS (app.alert('This is a malicious comment!');)
+
+% Object 1: Document Catalog
+1 0 obj
+<< /Type /Catalog
+   /Pages 2 0 R
+>>
+endobj
+
+% Object 2: Pages
+2 0 obj
+<< /Type /Pages
+   /Kids [3 0 R]
+   /Count 1
+>>
+endobj
+
+% Object 3: Page
+3 0 obj
+<< /Type /Page
+   /Parent 2 0 R
+   /MediaBox [0 0 612 792]
+   /Contents 4 0 R
+   /Resources << >>
+>>
+endobj
+
+% Object 4: Page Content
+4 0 obj
+<< /Length 44 >>
+stream
+BT
+/F1 24 Tf
+100 700 Td
+(Hello, World!) Tj
+ET
+endstream
+endobj
+
+% Object 5: Font
+5 0 obj
+<< /Type /Font
+   /Subtype /Type1
+   /BaseFont /Helvetica
+>>
+endobj
+
+% Cross-Reference Table
+xref
+0 5
+0000000000 65535 f  % Missing free object number (0) in the xref table
+0000000010 00000 n  % Incorrect offset; does not point to a valid object location
+0000000050 00000 n  % Incorrect offset; does not point to a valid object location
+0000000100 00000 n  % Incorrect offset; does not point to a valid object location
+0000000150 00000 n  % Incorrect offset; does not point to a valid object location
+
+% Note: The xref table should have a valid size field that matches the number of objects
+
+% Trailer
+trailer
+<< /Size 5  % Size field does not match the actual number of objects defined in the xref
+   /Root 1 0 R  % Missing valid root indirect reference to the Document catalog
+>>
+startxref
+200  % This startxref value does not point to the actual location of the xref table
+%%EOF
