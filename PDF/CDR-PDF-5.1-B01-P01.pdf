@@ -1,0 +1,113 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog
+   /Pages 2 0 R
+   /Metadata 3 0 R
+   /EmbeddedFile 8 0 R
+>>
+endobj
+2 0 obj
+<< /Type /Pages
+   /MediaBox [0 0 612 792]
+   /Count 1
+   /Kids [4 0 R]
+>>
+endobj
+3 0 obj
+<< /Type /Metadata
+   /Length 100
+   /Filter /FlateDecode
+% Metadata stream should be removed, but it's included here
+stream
+<</Author (John Doe) /Title (Sensitive Document) /Subject (Confidential) /Keywords (Top Secret)>> 
+% Sensitive information should not be present
+endstream
+endobj
+4 0 obj
+<< /Type /Page
+   /Parent 2 0 R
+   /Resources << >>
+   /Contents 5 0 R
+>>
+endobj
+5 0 obj
+<< /Length 44 >>
+stream
+BT
+/F1 24 Tf
+100 700 Td
+(This is a sample PDF document.) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Font
+   /Subtype /Type1
+   /BaseFont /Helvetica
+   /FontDescriptor 7 0 R
+>>
+endobj
+7 0 obj
+<< /Type /FontDescriptor
+   /FontName /Helvetica
+   /Flags 32
+   /FontBBox [0 -250 1000 800]
+   /MissingWidth 500
+% Font descriptor should be removed, but it's included here
+endobj
+
+8 0 obj
+<< /Type /EmbeddedFile
+   /Length 200
+   /Filter /FlateDecode
+   /F (example.txt)
+% Embedded file should be removed, but it's included here
+stream
+% This is an embedded file content
+Hello, this is an embedded file.
+endstream
+endobj
+
+9 0 obj
+<< /Type /Sound
+   /Length 150
+   /Filter /FlateDecode
+% Sound object should be removed, but it's included here
+stream
+% This is a sound stream
+Sound data goes here.
+endstream
+endobj
+
+10 0 obj
+<< /Type /Movie
+   /Length 250
+   /Filter /FlateDecode
+% Movie object should be removed, but it's included here
+stream
+% This is a movie stream
+Movie data goes here.
+endstream
+endobj
+
+% Invalid cross-reference table
+xref
+0 11
+0000000000 65535 f 
+0000000000 00000 n 
+0000000000 00000 n 
+0000000000 00000 n 
+0000000000 00000 n 
+0000000000 00000 n 
+0000000000 00000 n 
+0000000000 00000 n 
+0000000000 00000 n 
+0000000000 00000 n 
+0000000000 00000 n 
+% Incorrectly formatted xref entry, should reference valid object numbers
+trailer
+<< /Size 11
+   /Root 1 0 R
+>>
+% Missing endobj for the trailer, causing a syntax error
+%%EOF
