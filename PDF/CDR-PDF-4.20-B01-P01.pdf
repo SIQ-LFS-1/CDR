@@ -1,0 +1,55 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog
+   /Pages 2 0 R
+>>
+endobj
+2 0 obj
+<< /Type /Pages
+   /MediaBox [0 0 612 792]
+   /Count 1
+   /Kids [3 0 R]
+>>
+endobj
+3 0 obj
+<< /Type /Page
+   /Parent 2 0 R
+   /Resources << >>
+   /Contents 4 0 R
+>>
+endobj
+4 0 obj
+<< /Length 44 >>
+stream
+BT
+/F1 24 Tf
+100 700 Td
+(This is a sample PDF document.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font
+   /Subtype /Type1
+   /BaseFont /Helvetica
+>>
+endobj
+
+% Hidden data starts here
+% This is hidden content that should not be parsed by the PDF reader.
+% It could contain malicious code or other hidden information.
+% For example, a hidden message or a script.
+<</HiddenData (This is hidden data) /MaliciousCode (alert("This is a hidden alert!"))>>
+
+% More hidden data can be placed here
+% This is another hidden section that could be used for various purposes.
+% It is placed between objects to avoid detection.
+<</AnotherHiddenSection (More hidden content)>>
+
+% End of hidden data
+
+%%EOF
+% Hidden data after EOF marker
+% This data is outside the PDF object space and may not be parsed.
+% It could be used for various purposes, including malicious intent.
+<</PostEOFData (This is data after EOF)>>
